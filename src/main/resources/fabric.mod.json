@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "skinswap",
+  "version": "${version}",
+  "name": "Skin Swap",
+  "description": "Pick a custom skin from PNG files using an in-game GUI. Client-side only.",
+  "authors": ["Kunal"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.skinswap.SkinSwapClient"]
+  },
+  "mixins": ["skinswap.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
